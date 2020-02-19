@@ -12,10 +12,7 @@ module.exports = {
     "source": {
       "protocol": "gl:",
       "query": {},
-      "style": require("hsl-map-style").generateStyle({
-        sourcesUrl,
-        glyphsUrl
-      })
+      "style": require("./style")
     },
     "headers": {
       "Cache-Control": "public,max-age=604800"
