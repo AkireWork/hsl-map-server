@@ -105,11 +105,5 @@ module.exports = {
     "headers": {
       "Cache-Control": "public,max-age=172800"
     }
-  },
-  "/map/v1/estonia-parkandride-bikestop-map": {
-    "source": "estoniaparkandridebikestop://",
-    "headers": {
-      "Cache-Control": "public,max-age=172800"
-    }
   }
 }
