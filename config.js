@@ -94,12 +94,6 @@ module.exports = {
       "Cache-Control": "public,max-age=43200"
     }
   },
-  "/map/v1/hsl-route-map": {
-    "source": `otproutes://${process.env.ESTONIA_OTP_URL}`,
-    "headers": {
-      "Cache-Control": "public,max-age=43200"
-    }
-  },
   "/map/v1/estonia-parkandride-bikestop-map": {
     "source": "estoniaparkandridebikestop://",
     "headers": {
