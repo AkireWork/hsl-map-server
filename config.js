@@ -105,5 +105,11 @@ module.exports = {
     "headers": {
       "Cache-Control": "public,max-age=172800"
     }
+  },
+  "/map/v1/hsl-citybike-map": {
+    "source": `otpcitybikes://${process.env.ESTONIA_OTP_URL}`,
+    "headers": {
+      "Cache-Control": "public,max-age=43200"
+    }
   }
 }
