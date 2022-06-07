@@ -1710,7 +1710,7 @@ module.exports = {
         "text-offset": [0, 0.6],
         "text-padding": 2,
         "text-size": 12,
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#666",
@@ -1741,7 +1741,7 @@ module.exports = {
         "text-offset": [0, 0.6],
         "text-padding": 2,
         "text-size": 12,
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#666",
@@ -1772,7 +1772,7 @@ module.exports = {
         "text-offset": [0, 0.6],
         "text-padding": 2,
         "text-size": 12,
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#666",
@@ -1809,6 +1809,7 @@ module.exports = {
         "text-optional": true,
         "text-padding": 2,
         "text-size": 12
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#666",
