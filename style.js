@@ -1690,67 +1690,6 @@ module.exports = {
       }
     },
     {
-      "id": "poi-level-3",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "poi",
-      "minzoom": 16,
-      "filter": [
-        "all",
-        ["==", "$type", "Point"],
-        [">=", "rank", 25],
-        ["any", ["!has", "level"], ["==", "level", 0]]
-      ],
-      "layout": {
-        "icon-image": "{class}_11",
-        "text-anchor": "top",
-        "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 9,
-        "text-offset": [0, 0.6],
-        "text-padding": 2,
-        "text-size": 12,
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-blur": 0.5,
-        "text-halo-color": "#ffffff",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "poi-level-2",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "poi",
-      "minzoom": 15,
-      "filter": [
-        "all",
-        ["==", "$type", "Point"],
-        ["<=", "rank", 24],
-        [">=", "rank", 15],
-        ["any", ["!has", "level"], ["==", "level", 0]]
-      ],
-      "layout": {
-        "icon-image": "{class}_11",
-        "text-anchor": "top",
-        "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 9,
-        "text-offset": [0, 0.6],
-        "text-padding": 2,
-        "text-size": 12,
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-blur": 0.5,
-        "text-halo-color": "#ffffff",
-        "text-halo-width": 1
-      }
-    },
-    {
       "id": "poi-level-1",
       "type": "symbol",
       "source": "openmaptiles",
@@ -1761,6 +1700,7 @@ module.exports = {
         ["==", "$type", "Point"],
         ["<=", "rank", 14],
         ["has", "name"],
+        ["!=", "class", "public_transport"],
         ["any", ["!has", "level"], ["==", "level", 0]]
       ],
       "layout": {
@@ -1772,7 +1712,7 @@ module.exports = {
         "text-offset": [0, 0.6],
         "text-padding": 2,
         "text-size": 12,
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#666",
@@ -1808,8 +1748,8 @@ module.exports = {
         "text-offset": [0, 0.6],
         "text-optional": true,
         "text-padding": 2,
-        "text-size": 12
-        "visibility": "none"
+        "text-size": 12,
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#666",
